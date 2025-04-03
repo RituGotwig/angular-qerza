@@ -37,7 +37,7 @@ index = 0;
     const company = prompt("Enter the Job Description:", "")?.trim();
     const companylogo = "xyz";
     const salary = "20000-50000";
-    const url="xyz.com"
+    const url="admin/profile"
     const location = "hamburg";
 
     if (!title ||  !company ) {
