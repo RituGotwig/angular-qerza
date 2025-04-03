@@ -103,16 +103,12 @@ index = 0;
   ngOnInit() {
     console.log("ngOnInit() {...");
     // To getAllJobs
-  
     this.getAllJobs()
-   
-  
   }
-
   getAllJobs() {
     this.searchJobService.getAllJobs().subscribe({
       next: (jobs) => { 
-        this.jobs = jobs as any; // Assign jobs data
+        this.jobs = jobs;
         this.index = jobs.length + 1;
         console.log('Current jobs: ', this.jobs);
       },
@@ -132,5 +128,4 @@ index = 0;
     image: ['assets/images/svg/arrow-down-short.svg']
   }
 
-  
 }
